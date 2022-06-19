@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icono-->
+    <link rel="shortcut icon" href="Imagenes/Logo.ico" />
+    <!--Descripcion-->
+    <meta name="descripcion"
+        content="Tienda de Celulares NFC Celulares. Encuentra los mejores celulares, tablet y relojes los ultimos modelos y los mejores precios para vos.">
+    <!--Keywords-->
+    <meta name="keywords" content="Nfc Celulares, Celulares, Tablet, Relojes, Smartphones,
+         Smartwatch, Tienda de Celulares, Samsung, Motorola, LG, Amazon, Xiaomi, Apple">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <!--link al CDM de animate-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>NFC CELULARES</title>
+</head>
+
+<body>
+    <a name="arriba"></a>
+    <div class="contenedor">
+        <header class="contHeader">
+            <nav class="navbar navbar-expand-lg header__nav">
+                <div class="container-fluid">
+                    <div class="header__nav--logo_Inicio animate__animated animate__zoomIn">
+                        <a class="header__nav--logo_Inicio--a" href="index.html"><img class="header__nav--logo_Inicio--a--img" src="Imagenes/Logo de inicio.png"
+                                alt="Imagen Logo de la Pagina "></a>
+                    </div>
+                    <div>
+                        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="nav-menu-one navbar-collapse header__nav--menu" id="navbarNavDropdown">
+                        <ul class="navbar-nav header__nav--menu--ul">
+                            <li class="nav-item header__nav--menu--ul--li">
+                                <a class="nav-link header__nav--menu--ul--li--a" href="productos.html">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item header__nav--menu--ul--li">
+                                <a class="nav-link header__nav--menu--ul--li--a" href="productos.html">OFERTAS</a>
+                            </li>
+                            <li class="nav-item header__nav--menu--ul--li">
+                                <a class="nav-link header__nav--menu--ul--li--a" href="productos.html">CONTACTO</a>
+                            </li>
+                            <li class="nav-item header__nav--menu--ul--li">
+                                <a class="nav-link header__nav--menu--ul--li--a" href="productos.html">QUIENES SOMOS</a>
+                            </li>
+                        </ul>
+                        <!--Buscador-->
+                        <div class="header__nav--botonesInicio">
+                            <form action="" class="header__nav--botonesInicio--form">
+                                <input class="header__nav--botonesInicio--form--input" type="search" name="Buscador" placeholder="¿Que buscas?">
+                                <button class="header__nav--botonesInicio--form--button"><img src="./Imagenes/ico/search.png" alt="Icono Boton buscador"></button>
+                            </form>
+                        </div>
+                        <div class="header__nav--botonesLateral">
+                            <button type="button" class="btn btn-link position-relative header__nav--botonesLateral--button"><img
+                                    src="./Imagenes/ico/carrito-de-compras.png" alt="Icono Carrito de Compra"> <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-link">
+                                    <span class="visually-hidden">unread messages</span></span>
+                            </button>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-link header__nav--botonesLateral--button" data-bs-toggle="modal"
+                                data-bs-target="#myModal"><img src="./Imagenes/ico/cuenta_de_usuario.png"
+                                    alt="Icono Carrito de Compra">
+                            </button>
+                            <!-- Modal -->
+                            <div id="myModal" class="modal fade header__nav--botonesLateral--modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog header__nav--botonesLateral--modal-dialog">
+                                    <div class="modal-content header__nav--botonesLateral--modal-content">
+                                        <div class="modal-header header__nav--botonesLateral--modal-header">
+                                            <h3 class="modal-title">Iniciar Sesión</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body header__nav--botonesLateral--modal-body">
+                                            <a class="header__nav--botonesLateral--modal-body--a" href="index.html"><img class="header__nav--botonesLateral--modal-body--a--img" src="Imagenes/Logo de inicio.png"
+                                                    alt="Imagen logo inicio"></a>
+                                            <form action="" class="header__nav--botonesLateral--modal-body--form">
+                                                <div class="form-group header__nav--botonesLateral--modal-body--form--form-group">
+                                                    <div class="input-group header__nav--botonesLateral--modal-body--form--form-group--input-group">
+                                                        <span class="input-group-addon"></i></span>
+                                                        <input type="text" class="form-control header__nav--botonesLateral--modal-body--form--form-group--input-group--input" name="Usuario"
+                                                            placeholder="Usuario" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group header__nav--botonesLateral--modal-body--form--form-group">
+                                                    <div class="input-group header__nav--botonesLateral--modal-body--form--form-group--input-group">
+                                                        <span class="input-group-addon"></span>
+                                                        <input type="text" class="form-control header__nav--botonesLateral--modal-body--form--form-group--input-group--input" name="Contraseña"
+                                                            placeholder="Contraseña" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group header__nav--botonesLateral--modal-body--form--form-group">
+                                                    <button class="header__nav--botonesLateral--modal-body--form--form-group--button" type="submit"
+                                                        class="btn btn-secondary btn-block btn-lg">Iniciar
+                                                        Sesión</button>
+                                                </div>
+                                                <p class="hint-text header__nav--botonesLateral--modal-body--form--p"><a href="#" class="header__nav--botonesLateral--modal-body--form--p--a">¿Olvidaste tu contraseña?</a></p>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer header__nav--botonesLateral--modal-footer">
+                                            <h4 class="header__nav--botonesLateral--modal-footer--h4">¿No tienes una cuenta?</h4><a class="header__nav--botonesLateral--modal-footer--a" href="#">Creé una Aquí</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="contMain">
+            <section>
+                <div class="seccionProductos">
+                    <a href="#Celulares"><img class="animate__animated animate__heartBeat"
+                            src="./Imagenes/ico/celular.ico" alt="Icono celular">
+                        <h3>Celulares</h3>
+                    </a>
+                    <a href="#Tablet"><img class="animate__animated animate__heartBeat" src="./Imagenes/ico/tablet.ico"
+                            alt="Icono tablet">
+                        <h3>Tablet</h3>
+                    </a>
+                    <a href="#Relojes"><img class="animate__animated animate__heartBeat" src="./Imagenes/ico/reloj.ico"
+                            alt="Icono reloj">
+                        <h3>Relojes</h3>
+                    </a>
+                </div>
+
+            </section>
+            <section>
+                <h3 class="productosMarcas-Titulo">Las Mejores Marcas</h3>
+                <div class="productosMarcas">
+                    <div><img src="Imagenes/ico/logo_samsung.png" alt="Imagen logo Samsung"></div>
+                    <div><img src="Imagenes/ico/logo_xiaomi.png" alt="Imagen logo Xiaomi"></div>
+                    <div><img src="Imagenes/ico/logo_LG.png" alt="Imagen logo LG"></a></div>
+                    <div><img src="Imagenes/ico/logo_motorola.png" alt="Imagen logo Motorola"></div>
+                    <div><img src="Imagenes/ico/logo_apple.png" alt="Imagen logo Apple"></a></div>
+                    <div><img src="Imagenes/ico/logo_amazon.png" alt="Imagen logo Amazon"></a></div>
+                </div>
+            </section>
+            <section>
+                <!--1° Seccion-->
+                <!--CELULARES-->
+                <a name="Celulares"></a>
+                <h1 class="seccionTituloCel">Celulares</h1>
+                <!--1° Fila-->
+                <div class="grid-Celulares">
+                    <div class="celItem1">
+                        <img class="animate__animated animate__fadeInLeft" src="Imagenes/Celulares/Samsung A02.png"
+                            alt="Imagen Samsung A02" />
+                        <h3>Samsung Galaxy A02s</h3>
+                        <p class="colorPrecio"><strong>$ 62.999</strong></p>
+                    </div>
+                    <div class="celItem2">
+                        <img class="animate__animated animate__fadeInUp"
+                            src="Imagenes/Celulares/Xiaomi Redmi Note 10 5G Dual SIM 128.png"
+                            alt="Imagen Xiaomi Redmi Note 10">
+                        <h3>Xiaomi Redmi Note 10</h3>
+                        <p class="colorPrecio"><strong>$ 54.999</strong></p>
+                    </div>
+                    <div class="celItem3">
+                        <img class="animate__animated animate__fadeInBottomRight"
+                            src="Imagenes/Celulares/Samsung A32.png" alt="Imagen Samsung A32">
+                        <h3>Samsung Galaxy Awesome A32</h3>
+                        <p class="colorPrecio"><strong>$ 49.999</strong></p>
+                    </div>
+
+
+                    <!--2° Fila-->
+
+                    <div class="celItem4">
+                        <img class="animate__animated animate__lightSpeedInLeft" src="Imagenes/Celulares/LG K51S 64 GB.png" alt="Imagen LG K51S">
+                        <h3>LG K51S</h3>
+                        <p class="colorPrecio"><strong>$ 26.999</strong></p>
+                    </div>
+                    <div class="celItem5">
+                        <img class="animate__animated animate__zoomIn" src="Imagenes/Celulares/Moto G30 128 GB gris tornasol 4 GB RAM.png" alt="Imagen Moto G30">
+                        <h3>Moto G30</h3>
+                        <p class="colorPrecio"><strong>$ 45.999</strong></p>
+                    </div>
+                    <div class="celItem6">
+                        <img class="animate__animated animate__lightSpeedInRight" src="Imagenes/Celulares/Xiaomi Mi 11 128GB.png" alt="Imagen Xiaomi Mi 11" />
+                        <h3>Xiaomi Mi 11</h3>
+                        <p class="colorPrecio"><strong>$ 82.999</strong></p>
+                    </div>
+
+                    <!--3° Fila-->
+
+                    <div class="celItem7">
+                        <img class="animate__animated animate__lightSpeedInLeft" src="Imagenes/Celulares/SamsungS9.png" alt="Imagen Samsung S9">
+                        <h3>Samsung S9 Plus</h3>
+                        <p class="colorPrecio"><strong>$ 47.999</strong></p>
+                    </div>
+                    <div class="celItem8">
+                        <img class="animate__animated animate__zoomIn" src="Imagenes/Celulares/SamsungA51.png" alt="Imagen Samsung a51">
+                        <h3>Samsung A51</h3>
+                        <p class="colorPrecio"><strong>$ 57.999</strong></p>
+                    </div>
+                    <div class="celItem9">
+                        <img class="animate__animated animate__lightSpeedInRight" src="Imagenes/Celulares/SamsungA21s.png" alt="Imagen Samsung A21s">
+                        <h3>Samsung Galaxy A21s</h3>
+                        <p class="colorPrecio"><strong>$ 74.999</strong></p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--2° Seccion-->
+
+            <section>
+                <!--TABLET-->
+                <a name="Tablet"></a>
+                <h2 class="seccionTitulo">Tablets</h2>
+                <!--1° Fila-->
+                <div class="grid-Tablet">
+                    <div class="tabletItem1">
+                        <img class="animate__animated animate__lightSpeedInLeft" src="Imagenes/tablet/Apple iPad de 10.2.png" alt="Imagen IPAD Apple iPAD 10.2" />
+                        <h3>Apple iPad 10.2 (8ª generación)</h3>
+                        <p class="colorPrecio"><strong>$ 98.499</strong></p>
+                    </div>
+                    <div class="tabletItem2">
+                        <img class="animate__animated animate__zoomIn" src="Imagenes/tablet/Tablet Lenovo Smart Tab M8.png" alt="Imagen Tablet Lenovo" />
+                        <h3>Tablet Lenovo Smart Tab M8</h3>
+                        <p class="colorPrecio"><strong>$ 19.999</strong></p>
+                    </div>
+                    <div class="tabletItem3">
+                        <img class="animate__animated animate__lightSpeedInRight" src="Imagenes/tablet/tablet-samsung-galaxy-tab-a7_opt.png"
+                            alt="Imagen Tablet Samsung Galaxy A7">
+                        <h3>Samsung Galaxy Tab A7</h3>
+                        <p class="colorPrecio"><strong>$ 25.999</strong></p>
+                    </div>
+
+                    <!--2° Fila-->
+                    <div class="tabletItem4">
+                        <img class="animate__animated animate__lightSpeedInLeft" src="Imagenes/tablet/Tablet Amazon Fire HD 8 2020 KFONWI 8 32GB black con 2GB de memoria RAM.png"
+                            alt="Imagen Tablet Amazon Fire HD 8 2020">
+                        <h3>Tablet Amazon Fire HD 8</h3>
+                        <p class="colorPrecio"><strong>$ 23.499</strong></p>
+                    </div>
+                    <div class="tabletItem5">
+                        <img class="imagenTablet_gd animate__animated animate__zoomIn" src="Imagenes/tablet/Tablet con funda Gadnic Taurus Phone.png"
+                            alt="Imagen Tablet Gadnic">
+                        <h3>Tablet con funda Gadnic 10.1"</h3>
+                        <p class="colorPrecio"><strong>$ 21.999</strong></p>
+                    </div>
+                    <div class="tabletItem6">
+                        <img class="animate__animated animate__lightSpeedInRight" src="Imagenes/tablet/Samsung TAB A8.png" alt="Tablet Samsung A 2019">
+                        <h3>Samsung Galaxy Tab A8 2019</h3>
+                        <p class="colorPrecio"><strong>$ 25.999</strong></p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <!--3° Seccion-->
+                <!--RELOJES-->
+                <!--1° Fila-->
+                <a name="Relojes"></a>
+                <h2 class="seccionTitulo">Relojes</h2>
+                <div class="grid-Relojes">
+                    <div class="relItem1">
+                        <img class="animate__animated animate__lightSpeedInLeft" src="Imagenes/Relojes/Galaxy Watch3 Bluetooth (45mm) Titanium.png"
+                            alt="Imagen Galaxy Watch3" />
+                        <h3>Samsung Galaxy Watch3 Titanium</h3>
+                        <p class="colorPrecio"><strong>$ 43.999</strong></p>
+                    </div>
+                    <div class="relItem2">
+                        <img class="animate__animated animate__zoomIn" src="Imagenes/Relojes/Samsung Galaxy Fit2 (Bluetooth) 1.1 caja 46.6mm de plástico malla black de tpu y bisel black SM-R220.png"
+                            alt="Imagen Samsung Galaxy Fit2" />
+                        <h3>Samsung Galaxy Fit2</h3>
+                        <p class="colorPrecio"><strong>$ 6.699</strong></p>
+                    </div>
+                    <div class="relItem3">
+                        <img class="animate__animated animate__lightSpeedInRight" src="Imagenes/Relojes/Smartwatch Amazfit Gts 2 Mini Gts2 Microfono Gps Spo2 1.55''.png"
+                            alt="Imagen Amazfit Gts2">
+                        <h3>Smartwatch Amazfit Gts 2</h3>
+                        <p class="colorPrecio"><strong>$ 13.999</strong></p>
+                    </div>
+
+                    <!--2° Fila-->
+
+                    <div class="relItem4">
+                        <img class="animate__animated animate__lightSpeedInLeft" src="Imagenes/Relojes/Xiaomi Mi Watch Lite 1.4 caja black malla black de tpu REDMIWT02.png"
+                            alt="Imagen Xiaomi MI Watch Lite">
+                        <h3>Xiaomi Mi Watch Lite 1.4</h3>
+                        <p class="colorPrecio"><strong>$ 10.499</strong></p>
+                    </div>
+                    <div class="relItem5">
+                        <img class="animate__animated animate__zoomIn" src="Imagenes/Relojes/watch samsung 4.png" alt="Imagen Samsung Galaxy Watch 4">
+                        <h3>Samsung Galaxy Watch4 Classic</h3>
+                        <p class="colorPrecio"><strong>$ 45.999</strong></p>
+                    </div>
+                    <div class="relItem6">
+                        <img class="animate__animated animate__lightSpeedInRight" src="Imagenes/Relojes/Samsung Galaxy Watch4 1.png" alt="Imagen Samsung Galaxy Wacht 4">
+                        <h3>Samsung Galaxy Watch4</h3>
+                        <p class="colorPrecio"><strong>$ 38.699</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <h2>Stock Disponible</h2>
+        </main>
+
+        <!--Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"></script>
+
+
+        <script src="./productos.js">
+        </script>
+
+</body>
+
+</html>

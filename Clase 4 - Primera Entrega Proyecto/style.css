@@ -1,0 +1,2569 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0e0e0;
+}
+
+.contenedor{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5 , auto); ;
+    grid-template-areas: "contHeader contHeader contHeader"
+                         "contMain contMain contMain"
+                         "contMain contMain contMain"
+                         "contMain contMain contMain"
+                         "contFooter contFooter contFooter";
+}
+
+.contenedor .contHeader{
+    grid-area: contHeader;
+}
+
+.contenedor .contMain{
+    grid-area: contMain;
+}
+
+.contenedor .contFooter{
+    grid-area: contFooter;
+}
+
+h1{
+    font-weight: 600;
+    color: #707070;
+    font-size: 30px;
+    margin: 20px;
+}
+
+h2{
+    font-size: 26px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    font-weight: 500;
+    color: #707070;
+}
+
+h3{
+    font-size: 20px;
+    padding: 5px;
+}
+
+h4{
+    font-size: 16px;
+    text-align: center;
+}
+
+p{
+    font-size: 15px;
+}
+
+header{
+    width: 100%;
+    background: #5C258D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header__nav--logo_Inicio{
+    padding-left: 20px;
+}
+
+.header__nav{
+    padding: 0;
+}
+
+.header__nav--menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.header__nav--menu--ul--li{
+    display: inline-block;
+    font-size: 17px;
+}
+
+.header__nav--menu--ul--li--a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 18px;
+}
+
+.header__nav--menu--ul--li--a:hover{
+    border-bottom: 3px solid white;
+    color: #d3d3d3;
+}
+
+.header__nav--botonesInicio{
+    padding: 5px;
+}
+
+.header__nav--botonesInicio--form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5c268c;
+}
+
+.header__nav--botonesInicio--form:hover{
+    border: 1.5px solid white;
+    padding: 0;
+    margin: 0;
+}
+
+.header__nav--botonesInicio--form--button{
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+}
+
+.header__nav--botonesInicio--form--input{
+    height: 5.5vh;
+    width: 32vh;
+    transition: .3s linear;
+    background-color: #5c268c;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    float: left;
+}
+
+.header__nav--botonesInicio--form--input:hover{
+    outline: none;
+    width: 40vh;
+}
+
+.header__nav--botonesInicio--form--input:focus{
+    outline: none;
+}
+
+.header__nav--botonesInicio--form--input::placeholder{
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+.header__nav--botonesLateral--button{
+    padding: 15px;
+}
+
+.header__nav--botonesLateral--button:focus{
+    box-shadow: none;
+}
+
+.header__nav--botonesLateral--modal-body--form--form-group--input-group--input{
+    padding: 10px;
+    margin: 10px;
+    width: 10px;
+}
+
+.header__nav--botonesLateral--modal-body--form--form-group--button{
+    width: 300px;
+    height: 60px;
+    margin-top: 8px;
+    margin-left: 80px;
+    background-color: #5c268c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.header__nav--botonesLateral--modal-body--form--form-group--button:hover{
+    background-color: #4524A3;
+}
+
+.header__nav--botonesLateral--modal-body--form--p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header__nav--botonesLateral--modal-body--form--p--a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.header__nav--botonesLateral--modal-body--form--p--a:hover{
+    color: #3F57B0;
+}
+
+.header__nav--botonesLateral--modal-body{
+    background-color: #4389a2;
+}
+
+.header__nav--botonesLateral--modal-body--a--img{
+    text-align: center;
+    padding-left: 140px;
+    width: 300px;
+    margin:10px;
+}
+
+.header__nav--botonesLateral--modal-footer{
+    padding-right: 110px;
+}
+
+.header__nav--botonesLateral--modal-footer--a{
+    color: #4389a2;
+    text-decoration: none;
+}
+
+.header__nav--botonesLateral--modal-footer--a:hover{
+    color: #3F57B0;
+}
+
+
+/*-----------------------------------------------------------MAIN------------------------------------------------------*/
+
+.main{
+    width: 100%;
+    padding: 1rem 0;
+    margin: auto;
+}
+
+.seccionCarrusel .carousel-inner img{
+    width: 1200px;
+    height: 561px;
+}
+
+.seccionCarrusel .carousel{
+    margin-bottom: 50px;
+}
+
+section{
+    text-align: center;
+}
+
+.seccionLanzamiento h2, .seccionAlg-ofertas h2, .seccionNovedadesTitulo{
+    display: inline-block;
+    position: relative;
+}
+
+.seccionLanzamiento h2::after, .seccionLanzamiento h2::before, .seccionAlg-ofertas h2::after, .seccionAlg-ofertas h2::before, .seccionNovedadesTitulo::after, .seccionNovedadesTitulo::before{
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 1px;
+    background-color: currentColor;
+    top: 2.2rem;
+}
+
+ .seccionLanzamiento h2::after, .seccionAlg-ofertas h2::after, .seccionNovedadesTitulo::after{
+    left: -500px;
+}
+
+.seccionLanzamiento h2::before, .seccionAlg-ofertas h2::before, .seccionNovedadesTitulo::before{
+    right: -500px;
+}
+
+.grid-masVendido, .grid-Lanzamiento, .grid-algunasOfertas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: baseline;
+    margin: 20px;
+}
+
+.grid-masVendido img, .grid-Lanzamiento img, .grid-algunasOfertas img{
+    height: 380px;
+}
+
+.grid-masVendido div, .grid-Lanzamiento div, .grid-algunasOfertas div{
+    background-color: white;
+    border-radius: 1em;
+    position: relative;
+}
+
+.nuevoLanzamiento, .nuevoLanzamiento1, .nuevoLanzamiento2{
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    border-radius: 1rem;
+    background-color: #92b843;
+    color: whitesmoke;
+    height: 25px;
+    width: 60px;
+    z-index: 1;
+}
+
+
+.colorPrecio{
+    font-size: 1.4rem;
+    color: #5C258D;
+}
+
+
+/*--------------------------------------------------Novedades--------------------------------------------------------*/
+
+.seccionNovedades{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.novedadesSamsung, .novedadesSamsungTablet, .novedadesIphone{
+    background-color: #262626;
+    color: whitesmoke;
+    display: inline-block;
+    margin: 20px;
+}
+
+.novedadesSamsung iframe{
+    float: left;
+    margin: 20px;
+}
+
+.novedadesSamsung-texto h2{
+    text-align: center;
+    margin-top: 70px;
+    color: whitesmoke;
+}
+
+.novedadesSamsung-texto p{
+    text-align: justify;
+    padding: 20px;
+}
+
+.novedadesIphone iframe{
+    float: right;
+    margin: 20px;
+}
+
+.novedadesIphone-texto h2{
+    text-align: center;
+    color: whitesmoke;
+    margin: 0;
+}
+
+.novedadesIphone-texto p{
+    text-align: justify;
+    padding: 20px;
+}
+
+.novedadesSamsungTablet iframe{
+    float: left;
+    margin: 20px;
+}
+
+.novedadesSamsungTablet-texto{
+    text-align: center;
+}
+
+.novedadesSamsungTablet-texto p{
+    text-align: justify;
+    padding: 20px;
+}
+
+.novedadesSamsungTablet-texto h2{
+    color: whitesmoke;
+    margin-top: 70px;
+}
+
+/*--------------------------------------------------------Hydrogel-----------------------------------------------------*/
+
+.seccionHydrogel{
+    width: 100%;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 2rem;
+}
+
+
+.hidrogelImagen{
+    width: 40%;
+    float: left;
+}
+
+.hidrogelCaracteristicasImagen{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.hidrogelCaracteristicasImagen img{
+    width: 55px;
+    height: 55px;
+    border-radius: 27.5px;
+}
+
+.hidrogelCaracteristicasImagen p{
+    padding-top: 20px;
+    color: #f9f8fe;
+    font-size: 15px;
+}
+
+.hidrogelCaracteristicasParrafo h2{
+    color: white;
+    font-size: 60px;
+}
+
+.hidrogelCaracteristicasParrafo p{
+    color: white;
+    padding: 1.2rem;
+    font-size: 15px;
+    text-align: start;
+    border-top: 0.4rem solid #642c94;
+    margin-left: 500px;
+    margin-right: 20px;
+}
+
+.seccionHydrogel button{
+    background-color: #5c268c;
+    width: 180px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px;
+    margin-left: 60px;
+}
+
+.seccionHydrogel button a{
+    text-decoration: none;
+    color: white;
+}
+
+.seccionHydrogel button:hover{
+    background-color: #4524A3;
+}
+
+/*-----------------------------------------------Contactanos------------------------------------------------------*/
+
+.seccionContactanos{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.seccionContactanos img{
+    width: 100%;
+}
+
+.seccionContactanos div{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(-15%, -50%);
+}
+
+.seccionContactanos-texto h2{
+    color: white;
+    font-size: 60px;
+    text-align: start;
+}
+
+.seccionContactanos-texto p{
+    color: white;
+    font-size: 20px;
+    text-align: start;
+    padding-left: 40px;
+}
+
+.seccionContactanos-texto button{
+    width: 230px;
+    height: 80px;
+    background-color: transparent;
+    border: 2px solid white;
+    margin-top: 50px;
+    margin-right: 235px;
+    padding: 0;
+}
+
+
+.seccionContactanos-texto button a{
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 14%;
+}
+
+.seccionContactanos-texto button:hover{
+    background-color: white;
+}
+
+.seccionContactanos-texto button a:hover{
+    color: #0f6d99;
+}
+
+/*-----------------------------------------------------Extras-----------------------------------------------------*/
+
+.seccionExtra{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    padding: 30px;
+}
+
+.seccionExtra div{
+    background-color: white;
+}
+
+.seccionExtra img{ 
+    width: 70px;
+}
+
+.seccionExtra h4{
+    margin: 20px;
+    font-size: 1.1rem;
+}
+
+/*Seccion Chat*/
+
+.seccionChat{
+    position: fixed;
+    right: -10px;
+    bottom: 15px;
+    list-style:none;
+}
+
+.btn-group ul ul {
+    padding-left: 70px;
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    list-style: none;
+}
+
+.btn-group ul button:focus{
+    box-shadow: none;
+}
+
+.btn-group ul ul li a:hover {
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    list-style-type: none;
+}
+
+.btn-group ul button:hover {
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    transform: rotate(345deg);
+}
+
+.dropdown-item img{
+    width: 45px;
+}
+
+.seccionArriba{
+    position: fixed;
+    bottom: 15px;
+    left: 5px;
+}
+.seccionArriba a img{
+    width: 40px;
+}
+
+.seccionArriba a img:hover , .seccionChat ul li img:hover{
+    transform: scale(1.2, 1.2);
+}
+
+/*-----------------------------------------------Pie de Pagina---------------------------------------------------------*/
+
+footer{
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #25262c;
+    border-bottom: 5px solid #5a5a5a;
+}
+
+.footer__piepagina h2{
+    color: white;
+    margin-top: 20px;
+    font-weight: 450;
+    font-size: 26px;
+}
+
+.footer__piepagina{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-right: 70px;
+}
+
+.footer__piepagina ul li{
+    list-style-type: none;
+    padding: 5px;
+}
+
+.footer__piepagina--ftrSuscribete--form{
+    padding: 50px;
+    padding-top: 10px;
+}
+
+.footer__piepagina--ftrSuscribete--form--p{
+    color: white;
+    text-align: justify;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.footer__piepagina--ftrSuscribete--form--input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #9c9c9c;
+    padding: 2px;
+    color: white;
+    width: 230px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.footer__piepagina--ftrSuscribete--form--input::placeholder{
+    color: white;
+    font-size: 15px;
+}
+
+.footer__piepagina--ftrSuscribete--form--input:hover {
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.footer__piepagina--ftrSuscribete--form--input:focus{
+    border: 2px solid white;
+    outline: none;
+}
+
+.footer__piepagina--ftrSuscribete--form--button{
+    background-color: #5c268c;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin-left: 85px;
+    font-size: 15px;
+}
+
+.footer__piepagina--ftrInformacion--ul{
+    padding-left: 50px;
+}
+
+.footer__piepagina--ftrInformacion--ul--li{
+    padding-top: 10px;
+    border-bottom: 1px solid #9c9c9c;
+}
+
+.footer__piepagina--ftrInformacion--ul--li--a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer__piepagina--ftrInformacion--ul--li--a:hover{
+    color: #dadada;
+}
+
+.footer__piepagina--ftrInformacion--ul--li--modal{
+    color: black;
+}
+
+.footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4{
+    padding: 15px;
+}
+
+.footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body{
+    background-color: #dadada;
+}
+
+.footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p{
+    text-align: justify;
+}
+
+.footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--imgTarjetasDebito{
+    padding-bottom: 30px;
+}
+
+.footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--pagoTarjetaCredito{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--pagoTarjetaCredito--p{
+    padding-left: 20px;
+}
+
+.footer__piepagina--ftrSecciones--ul--li{
+    color: white;
+    text-align: start;
+    padding-top: 10px;
+    border-bottom: 1px solid #9c9c9c;
+}
+
+.footer__piepagina--ftrSecciones--ul{
+    padding-left: 50px;
+}
+
+.footer__piepagina--ftrSecciones--ul--li--a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.footer__piepagina--ftrSecciones--ul--li--a:hover{
+    color: #dadada;
+}
+
+.footer__piepagina--ftrLogo--img{
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.footer__piepagina--ftrLogo--p{
+    padding-left: 30px;
+    color: #dadada;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.footer__piepagina--ftrLogo--redes_sociales{
+    padding-left: 30px;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.footer__piepagina--ftrLogo--redes_sociales--a{
+    padding-left: 8px;
+    color: transparent;
+}
+
+.footer__piepagina--ftrLogo--redes_sociales--a--img{
+    width: 35px;
+}
+
+.footer__piepagina--ftrLogo--redes_sociales--a--img:hover{
+    transform: scale(1.08, 1.08);
+}
+
+/*----------------------------------------------------Productos--------------------------------------------------*/
+
+.productosMarcas-Titulo{
+    color: #979797;
+}
+
+.seccionProductos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.seccionProductos h3{
+    padding: 8px;
+}
+
+.seccionProductos a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #9c9c9c;
+    margin-right: 27px;
+    padding: 20px;
+}
+
+.seccionProductos a:hover{
+    color: #215fbb;
+}
+.seccionProductos img:hover{
+    transform: scale(1.05, 1.05);
+}
+
+.productosMarcas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 40px;
+    margin-bottom: 80px;
+}
+
+.grid-Celulares{
+    display: grid;
+    grid-template-rows: repeat(1, 3fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-self: baseline;
+    align-content: space-between;
+    padding: 20px;
+    margin: 20px;
+}
+
+.seccionTitulo, .seccionTituloCel{
+    display: inline-block;
+    position: relative;
+}
+
+.seccionTitulo::after, .seccionTitulo::before, .seccionTituloCel::after, .seccionTituloCel::before{
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 1px;
+    background-color: currentColor;
+    top: 2.2rem;
+}
+
+.seccionTituloCel::after, .seccionTituloCel::before{
+    top: 1.2rem;
+}
+
+
+.seccionTitulo::after, .seccionTitulo::after, .seccionTituloCel::after{
+    left: -500px;
+}
+
+.seccionTitulo::before, .seccionTitulo::before, .seccionTituloCel::before{
+    right: -500px;
+}
+
+.grid-Tablet, .grid-Relojes{
+    display: grid;
+    grid-template-rows: repeat(1, 2fr);
+    grid-template-columns: repeat(3, 2fr);
+    gap: 30px;
+    align-items: baseline;
+    align-content: space-between;
+    margin: 20px;
+    padding: 20px;
+}
+
+.grid-Celulares div,.grid-Tablet div, .grid-Relojes div{
+    background-color: white;
+    border-radius: 1em;
+}
+
+.grid-Celulares div:hover, .grid-Tablet div:hover, .grid-Relojes div:hover{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    transform: scale(1);
+}
+
+.grid-Celulares img{
+    height: 300px;
+}
+
+.grid-Tablet img{
+    width: 250px;
+    height: 300px;
+}
+.grid-Relojes img{
+    width: 200px;
+    height: 300px;
+}
+
+.botonComprar{
+    width: 180px;
+    height: 40px;
+    margin: 10px;
+    color: white;
+    background-color: #0f6d99;
+    border: none;
+    border-radius: 90px;
+}
+
+.botonComprar:hover{
+    background-color: #4389A2;
+}
+
+/*----------------------------------------------------Ofertas--------------------------------------------------------*/
+
+.grid-Ofertas{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: baseline;
+    align-content: space-between;
+    margin: 20px;
+}
+
+.grid-Ofertas div{
+    background-color: white;
+    border-radius: 1em;
+}
+
+.grid-Ofertas div:hover{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    transform: scale(1.01);
+}
+
+.grid-Ofertas img{
+    width: 250px;
+    height: 370px;
+}
+
+.grid-Ofertas p{
+    align-self: end;
+}
+
+.oferItem2 img, .oferItem3 img, .oferItem6 img, .oferItem7 img{
+    width: 200px;
+}
+
+.precioAnterior{
+    text-decoration: line-through;
+    color: #9c9c9c;
+    font-size: 1.2rem;
+}
+
+/*-----------------------------------------------CONTACTO--------------------------------------------------*/
+
+.fondoContacto{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fondoContacto div{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-15%, -50%);
+    border-bottom: 4px solid #5c268c;
+}
+
+.fondoContacto img{
+    width: 1348px;
+    height: 300px;
+}
+
+.fondoContacto h1{
+    color: white;
+    letter-spacing: 0.5rem;
+}
+
+.seccionFormulario{
+    margin: 50px;
+}
+
+.textFormulario h3{
+    padding: 50px;
+    color: #5c268c;
+}
+
+.container{
+    width: 900px;
+    margin: auto;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.container input, .container select{
+    width: 400px;
+}
+
+.container h3{
+    padding: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.form-control:focus, .form-select:focus{
+    box-shadow: none;
+    border: 1.5px solid #4524A3;
+}
+
+.form-select option{
+    color: #4524A3;
+}
+
+.form-select{
+    color: #6c757d;
+}
+
+.formConsulta{
+    width: 825px;
+}
+    
+.formButton button{
+    width: 370px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #5C258D ;
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    border: none;
+    text-decoration: none;
+}
+
+.formButton button:hover{
+    background-color: #4524A3;
+    color: white;
+}
+
+.contacto-redesSocialesTitulo{
+    color: #707070;
+}
+
+.contacto-redesSociales{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding-right: 10px;    
+}
+
+.contacto-redesSociales img{
+    padding: 20px;
+}
+
+.contacto-Mensajeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 2rem;
+
+}
+
+.contacto-Mensajeria div{
+    padding-top: 50px;
+    height: 200px;
+    padding: 2rem;
+}
+
+.contacto-Mensajeria h4{
+    font-weight: 410;
+    padding-top: 5px;
+}
+
+.contacto-Mensajeria h4 a{
+    text-decoration: none;
+    color: #212529;
+}
+
+.contacto-MensajeriaColor{
+    padding: 15px;
+    color: #5c268c;
+    font-size: 20px;
+}
+
+.contacto-MensajeriaColor-Llamanos{
+    border-left: 5px solid #5c268c;
+    border-right: 5px solid #5c268c;
+}
+
+
+/*------------------------------------------------------Quienes Somos--------------------------------------------------*/
+
+.fondoQuienes-somos{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fondoQuienes-somos div{
+    position: absolute;
+    top: 50%;
+    left: 71%;
+    transform: translate(-15%, -50%);
+    border-bottom: 4px solid #5c268c;
+}
+
+.fondoQuienes-somos img{
+    width: 1348px;
+    height: 300px;
+}
+
+.fondoQuienes-somos h1{
+    color: white;
+    letter-spacing: 0.5rem;
+}
+
+.parrafoQuienessomos{
+    text-align: justify;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.seccionQuienessomos h2{
+    color: #511e7e;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #5c268c;
+    margin-right: 360px;
+}
+
+.textoQuienessomos{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.imgQuienessomos-lateral{
+    float: right;
+    width: 320px;
+    margin: 20px;
+}
+
+/* Media Queries */
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------RESPONSIVE LAPTOP--------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5 , auto); ;
+        grid-template-areas: "contHeader contHeader"
+                             "contMain contMain"
+                             "contMain contMain"
+                             "contMain contMain"
+                             "contFooter contFooter"
+    }
+
+    h3{
+        font-size: 20px;
+    }
+    .colorPrecio{
+        font-size: 21px;
+    }
+
+    /*----------------------------RESPONSIVE LAPTOP----------------------------*/
+    /*--------------------------------HEADER------------------------------------*/
+
+    header{
+        justify-content: space-evenly;
+    }
+
+    .header__nav--logo_Inicio{
+        padding: 0;
+    }
+    
+    .header__nav{
+        padding-left: 0;
+    }
+
+    .header__nav--menu--ul--li,.header__nav--botonesInicio--form--input{
+        font-size: 15px;
+    }
+
+    .header__nav--menu--ul--li--a{
+        padding: 20px;
+    }
+
+    .header__nav--botonesInicio--form--input {
+        height: 32px;
+        width: 180px;
+    }
+
+    .header__nav--botonesInicio--form--input:hover{
+        width: 200px;
+    }
+
+    /*----------------------------RESPONSIVE LAPTOP----------------------------*/
+    /*---------------------------------MAIN------------------------------------*/
+
+    .seccionCarrusel .carousel-inner img{
+        height: 431px;
+    }
+
+    .seccionMasVendido h2::after, .seccionMasVendido h2::before, .seccionLanzamiento h2::after, .seccionLanzamiento h2::before, .seccionAlg-ofertas h2::after, .seccionAlg-ofertas h2::before, .seccionNovedadesTitulo::after, .seccionNovedadesTitulo::before, .seccionTitulo::after, .seccionTitulo::before, .seccionTituloCel::after, .seccionTituloCel::before{
+        width: 350px;
+    }
+
+    .seccionMasVendido h2::after, .seccionLanzamiento h2::after, .seccionAlg-ofertas h2::after, .seccionNovedadesTitulo::after, .seccionTitulo::after, .seccionTitulo::after, .seccionTituloCel::after{
+        left: -350px;
+    }
+    
+    .seccionMasVendido h2::before, .seccionLanzamiento h2::before, .seccionAlg-ofertas h2::before, .seccionNovedadesTitulo::before, .seccionTitulo::before, .seccionTituloCel::before{
+        right: -350px;
+    }
+        
+    .grid-masVendido img, .grid-Lanzamiento img, .grid-algunasOfertas img{
+        height: 350px;
+    }
+
+    .grid-Celulares img{
+        height: 350px;
+    }
+    
+    .grid-Tablet img{
+        width: 250px;
+        height: 350px;
+    }
+    .grid-Relojes img{
+        width: 200px;
+        height: 300px;
+    }
+
+    .nuevoLanzamiento, .nuevoLanzamiento1, .nuevoLanzamiento2{
+        top: 5px;
+        left: 10px;
+    }
+
+    /*Novedades -- Responsive Laptop*/
+
+    .seccionNovedades iframe{
+        width: 55%;
+    }
+
+    .novedadesSamsung h2, .novedadesIphone h2, .novedadesSamsungTablet h2{
+        font-size: 22px;
+    }
+
+    .seccionNovedades p{
+        font-size: 14px;
+    }
+
+    .novedadesSamsungTablet-texto{
+        margin-top: 5px;
+    }
+
+    /*Hidrogel -- Responsive Laptop*/
+
+    .hidrogelImagen{
+        width: 500px;
+    }
+
+    .hidrogelCaracteristicasParrafo p{
+        font-size: 16px;
+        padding: 0;
+    }
+
+    /*Contactanos -- Responsive Laptop*/
+
+    .seccionContactanos img{
+        height: 600px;
+    }
+
+    /*Chat -- Responsive Laptop*/
+
+    .seccionChat img, .seccionArriba a img{
+        width: 70%;
+    }
+
+    .btn-group ul ul {
+        padding-left: 75px;
+    }
+
+    .dropdown-item img{
+        width: 70%;
+    }
+
+    /*Extra -- Responsive Laptop*/
+
+    .seccionExtra img{
+        width: 18%;
+        padding-left: 0;
+        padding-top: 10px;
+        margin: 10px;
+    }
+
+    /*----------------------------RESPONSIVE LAPTOP----------------------------*/
+    /*---------------------------------FOOTER----------------------------------*/
+
+    .footer__piepagina{
+        padding-right: 10px;
+    }
+
+    .footer__piepagina h2{
+        margin: 0px;
+        margin-top: 40px;
+        padding: 0;
+        padding-right: 40px;
+        padding-bottom: 30px;
+        font-size: 22px;
+    }
+
+    .footer__piepagina--ftrSuscribete--form, .footer__piepagina--ftrInformacion--ul, .footer__piepagina--ftrSecciones--ul{
+        padding: 0;
+    }
+
+    .footer__piepagina--ftrSuscribete--form--p{
+        font-size: 13px;
+    }
+
+    .footer__piepagina--ftrSuscribete--form--input{
+        width: 200px;
+        height: 30px;
+    }
+
+    .footer__piepagina--ftrSuscribete--form--button{
+        width: 27%;
+        margin-left: 85px;
+    }
+
+    .footer__piepagina--ftrInformacion--ul--li--a, .footer__piepagina--ftrSecciones--ul--li--a, .footer__piepagina--ftrSuscribete--form--button, .footer__piepagina--ftrSuscribete--form--input::placeholder, .footer__piepagina--ftrSuscribete--form--input{
+        font-size: 14px;
+    }
+
+    .footer__piepagina--ftrLogo--img{
+        width: 180px;
+    }
+
+    .footer__piepagina--ftrLogo--redes_sociales--a--img{
+        width: 25px;
+    }
+
+    .footer__piepagina--ftrLogo--p{
+        font-size: 11px;
+    }
+
+    /*----------------------------RESPONSIVE LAPTOP----------------------------*/
+    /*--------------------------------PRODUCTOS------------------------------------*/
+
+    .seccionProductos img{
+        width: 60px;
+    }
+
+    /*----------------------------RESPONSIVE LAPTOP----------------------------*/
+    /*--------------------------------CONTACTO------------------------------------*/
+
+    .contacto-Mensajeria{
+        padding: 0.5rem;
+    }
+
+    /*----------------------------RESPONSIVE LAPTOP----------------------------*/
+    /*--------------------------------QUIENES SOMOS------------------------------------*/
+
+    .fondoQuienes-somos img, .fondoContacto img{
+        width: 1006px;
+    }
+
+    .seccionInicio iframe{
+        margin: 20px;
+        width: 950px;
+    }
+
+    .imgQuienessomos-lateral{
+        height: 530px;
+    }
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------RESPONSIVE TABLET------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+@media screen  and (min-width: 480px) and (max-width: 768px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5 , auto); ;
+        grid-template-areas: "contHeader"
+                             "contMain"
+                             "contMain"
+                             "contMain"
+                             "contFooter";
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 20px;
+        margin: 0;
+    }
+
+    h3{
+        font-size: 16px;  
+    }
+
+    h4{
+        font-size: 12px;
+    }
+
+    p{
+        font-size: 11px;
+    }
+
+    /*----------------------------RESPONSIVE TABLET----------------------------*/
+    /*--------------------------------HEADER------------------------------------*/
+
+    .header__nav{
+        padding: 5px;
+    }
+
+    .header__nav--menu{
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .header__nav--menu--ul--li{
+        align-self: flex-start;
+        font-size: 14px;
+    }
+
+    .header__nav--menu--ul--li--a{
+        padding: 8px;
+    }
+
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+    
+    .header__nav--botonesInicio--form--input::placeholder{
+        font-size: 14px;
+    }
+
+    .header__nav--botonesInicio--form--button{
+        top: 222px;
+        right: 20%;
+        z-index: 1;
+    }
+
+    .header__nav--botonesLateral--modal-header .modal-title{
+        font-size: 18px;
+    }
+
+    .header__nav--botonesLateral--modal-body--a--img{
+        width: 65%;
+    }
+
+    .header__nav--botonesLateral--button img{
+        width: 90%;
+    }
+
+    .header__nav--botonesLateral--modal-body--form--form-group--input-group--input{
+        height: 40px;
+    }
+
+    .header__nav--botonesLateral--modal-body--form--form-group--input-group--input::placeholder{
+        font-size: 14px;
+    }
+
+    .header__nav--botonesLateral--modal-footer--a{
+        font-size: 12px;
+    }
+
+    /*----------------------------RESPONSIVE TABLET----------------------------*/
+    /*--------------------------------MAIN------------------------------------*/
+
+    .seccionCarrusel .carousel-inner img{
+        height: 400px;
+    }
+
+    .seccionLanzamiento h2::after, .seccionLanzamiento h2::before, .seccionAlg-ofertas h2::after, .seccionAlg-ofertas h2::before, .seccionNovedadesTitulo::after, .seccionNovedadesTitulo::before, .seccionTitulo::after, .seccionTitulo::before{
+        width: 200px;
+        top: 2rem;
+    }
+
+    .seccionLanzamiento h2::after, .seccionAlg-ofertas h2::after, .seccionNovedadesTitulo::after, .seccionTituloCel::after, .seccionTitulo::after{
+        left: -200px;
+    }
+    
+    .seccionLanzamiento h2::before, .seccionAlg-ofertas h2::before, .seccionNovedadesTitulo::before, .seccionTituloCel::before, .seccionTitulo::before{
+        right: -200px;
+    }
+
+    .grid-masVendido img, .grid-Lanzamiento img, .grid-algunasOfertas img{
+        width: 58%;
+        height: 40%;
+    }
+    
+    .lanzItem1 img{
+        width: 82%;
+    }
+
+    .lanzItem2 img{
+        width: 99%;
+    }
+
+    .algOfertas-item1 img{
+        width: 70%;
+    }
+
+    .algOfertas-item3 img{
+        width: 82%;
+    }
+
+    .colorPrecio{
+        font-size: 16px;
+    }
+
+    .precioAnterior{
+        font-size: 14px;
+    }
+
+    .nuevoLanzamiento, .nuevoLanzamiento1, .nuevoLanzamiento2{
+        height: 4%;
+        width: 22%;
+        font-size: 11px;
+        top: 5px;
+        width: 22%;
+        height: 5%;
+    }
+
+    /*Novedades -- Responsive Tablet*/
+
+    .seccionNovedades{
+        background-color: #262626;
+    }
+
+    .seccionNovedades p{
+        font-size: 14px;
+    }
+
+    .seccionNovedades h2{
+        font-size: 20px;
+    }
+
+    .novedadesSamsung iframe, .novedadesIphone iframe, .novedadesSamsungTablet iframe{
+        margin: 0px;
+        width: 95%;
+        height: 350px;
+        float: none;
+    }
+
+    .novedadesSamsung-texto h2, .novedadesIphone-texto h2, .novedadesSamsungTablet-texto h2{
+        margin-top: 5px;
+    }
+
+
+    /*Hidrogel -- Responsive Tablet*/
+
+    .seccionHydrogel{
+        height: 60%;
+        margin: 0;
+    }
+
+    .hidrogelImagen{
+        width: 60%;
+        float: none;
+    }
+
+    .hidrogelCaracteristicasImagen img{
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+    }
+
+    .hidrogelCaracteristicasParrafo h2{
+        font-size: 28px;
+    }
+
+    .hidrogelCaracteristicasParrafo p{
+        color: #ffffff;
+        font-size: 14px;
+        text-align: start;
+        border-top: 0.2rem solid #642c94;
+        padding: 0.5rem;
+        margin: 20px;
+    }
+
+    .hidrogelCaracteristicasImagen{
+        justify-content: space-around;
+    }
+
+    .hidrogelCaracteristicasImagen p{
+        font-size: 14px;
+    }
+
+    .seccionHydrogel button{
+        width: 20%;
+        height: 40px;
+        margin-left: 8%;
+        border-radius: 2px;
+    }
+
+    .seccionHydrogel button a{
+        font-size: 14px;
+    }
+
+    /*Contactanos -- Responsive Tablet*/
+
+    .seccionContactanos{
+        margin: 0;
+    }
+
+    .seccionContactanos img{
+        width: 100%;
+        height: 400px;
+    }
+
+    .seccionContactanos-texto h2{
+        font-size: 32px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .seccionContactanos-texto p{
+        font-size: 14px;
+        padding-left: 45px;
+        margin-right: 100px;
+    }
+
+    .seccionContactanos-texto button{
+        margin-right: 20%;
+    }
+
+    .seccionContactanos-texto button{
+        width: 45%;
+        height: 60px;
+        margin-right: 38%;
+    }
+
+    .seccionContactanos-texto button a{
+        font-size: 15px;
+    }
+
+    
+    /*Chat -- Responsive Tablet*/
+
+    .seccionChat{
+        bottom: 15px;
+        right: -30px;
+    }
+    
+    .seccionChat img{
+        width: 55%;
+    }
+
+    .dropdown-item img{
+        width: 95%;
+    }
+
+    .btn-group ul ul{
+        padding-left: 100px;
+    }
+
+    .seccionArriba{
+        bottom: 30px;
+        left: -5px;
+    }
+
+    .seccionArriba a img{
+        width: 60%;
+    }
+
+    /*Extra -- Responsive Tablet*/
+
+    .seccionExtra{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .seccionExtra img{ 
+        width: 22%;
+    }
+
+    .seccionExtra h4 {
+        font-size: 0.8rem;
+    }
+
+    /*----------------------------RESPONSIVE TABLET----------------------------*/
+    /*--------------------------------PRODUCTOS------------------------------------*/
+
+    .seccionProductos{
+        padding-left: 8%;
+        margin: 20px;
+    }
+
+    .seccionProductos img{
+        width: 60%;
+        height: 48%;
+    }
+
+    .seccionProductos a{
+        padding: 5px;
+    }
+
+    .productosMarcas img{
+        width: 80%;
+    }
+
+    .productosMarcas {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .grid-Celulares, .grid-Tablet, .grid-Relojes, .grid-Ofertas{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-self: start;
+    }
+
+    .grid-Celulares img{
+        width: 38%;
+        height: 40%;
+    }
+
+    .celItem6 img{
+        width: 64%;
+    }
+    
+    .grid-Tablet img{
+        width: 58%;
+        height: 40%;
+    }
+
+    .tabletItem2 img{
+        width: 83%;
+    }
+
+    .tabletItem5 img{
+        width: 66.25%;
+    }
+
+    .grid-Relojes img{
+        width: 40%;
+        height: 40%;
+    }
+
+    .relItem1 img{
+        width: 47%;
+    }
+
+    .grid-Celulares div,.grid-Tablet div, .grid-Relojes div{
+        background-color: white;
+        border-radius: 0.5em;
+        align-self: flex-end;
+    }
+
+    .seccionTituloCel{
+        font-size: 20px ;
+    }
+
+    .seccionTituloCel::after, .seccionTituloCel::before{
+        top: 0.8rem;
+        width: 190px;
+    }
+
+    /*----------------------------RESPONSIVE TABLET----------------------------*/
+    /*--------------------------------OFERTAS------------------------------------*/
+
+    .grid-Ofertas h3{
+        font-size: 16px;
+    }
+
+    .grid-Ofertas div{
+        border-radius: 0.5em;
+    }
+
+    .grid-Ofertas img{
+        width: 55%;
+        height: 45%;
+    }
+
+    .oferItem1 img, .oferItem5 img, .oferItem8 img{
+        width: 77%;
+    }
+
+    .oferItem4 img{
+        width: 66%;
+        height: 40%;
+    }
+
+    .oferItem4 div{
+        height: 50%;
+    }
+
+
+    /*----------------------------RESPONSIVE TABLET----------------------------*/
+    /*--------------------------------CONTACTO------------------------------------*/
+
+    .fondoContacto img{
+        width: 100%;
+    }
+
+    .fondoContacto div{
+        left: 73%;
+    }
+
+    .fondoContacto h1{
+        letter-spacing: 0.2rem;
+    }
+
+    .contactoIframe{
+        width: 90%;
+    }
+
+    .contacto-redesSociales img{
+        padding: 28px;
+    }
+
+    .formButton button{
+        padding: 0;
+        margin-top: 20px;
+        width: 100px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        padding: 0;
+    }
+
+    .container input, .container select{
+        width: 100%;
+        height: 80%;
+    }
+
+    .formConsulta{
+        width: 100%;
+    }
+
+    input::placeholder, textarea::placeholder, .form-select{
+        font-size: 14px;
+    }
+
+    .contacto-redesSociales img{
+        width: 90%;
+    }
+
+    .contacto-Mensajeria{
+        display: grid;
+        grid-template-rows: repeat(1,3fr);
+        gap: 20px;
+        text-align: center;
+        background-color: #f1f1f1;
+        padding: 2rem;
+    }
+
+    .contacto-MensajeriaColor-Llamanos{
+        border-left: 3px solid #5c268c;
+        border-right: 3px solid #5c268c;
+    }
+
+    .contacto-Mensajeria p, .contacto-MensajeriaColor{
+        font-size: 15px;
+        font-weight: 410;
+        padding-top: 5px;
+    }
+
+    .contacto-Mensajeria h4 a{
+        font-size: 11px;
+    }
+    
+
+    /*----------------------------RESPONSIVE TABLET----------------------------*/
+    /*--------------------------------QUIENES SOMOS------------------------------------*/
+
+
+    .fondoQuienes-somos img{
+        width: 100%;
+    }
+
+    .fondoQuienes-somos div{
+        left: 60%;
+    }
+
+    .fondoQuienes-somos h1{
+        letter-spacing: 0.2rem;
+    }
+
+    .imgQuienessomos-lateral{
+        width: 40%;
+        height: 60%;
+    }
+
+    .seccionQuienessomos h2{
+        padding: 0;
+        margin: 2%;
+        margin-right: 360px;
+    }
+
+    .textoQuienessomos {
+        padding: 10px;
+    }
+
+    .parrafoQuienessomos, .textoQuienessomos{
+        font-size: 14px;
+    }
+
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------RESPONSIVE CELULAR------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5 , auto); ;
+        grid-template-areas: "contHeader"
+                             "contMain"
+                             "contMain"
+                             "contMain"
+                             "contFooter";
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 18px;
+        margin: 0;
+    }
+
+    h3{
+        font-size: 14px;  
+    }
+
+    h4{
+        font-size: 11px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    /*----------------------------RESPONSIVE CELULAR----------------------------*/
+    /*--------------------------------HEADER------------------------------------*/
+
+    .nav{
+        visibility: visible;
+        background: #5C258D;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .header__nav--logo_Inicio{
+        padding: 0;
+    }
+
+    .header__nav--menu{
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+
+    .header__nav--menu--ul--li{
+        align-self: flex-start;
+        font-size: 14px;
+    }
+
+    .header__nav--menu--ul--li--a{
+        padding: 8px;
+    }
+    
+    .header__nav--botonesInicio--form--input::placeholder{
+        font-size: 14px;
+    }
+
+    .header__nav--botonesInicio--form--button{
+        top: 222px;
+        right: 20%;
+        z-index: 1;
+    }
+
+    .header__nav--botonesLateral--modal-header .modal-title{
+        font-size: 18px;
+    }
+
+    .header__nav--botonesLateral--modal-body--a--img{
+        padding-left: 85px;
+        width: 70%;
+    }
+
+    .header__nav--botonesLateral--button img{
+        width: 90%;
+    }
+
+    .header__nav--botonesLateral--modal-body--form--form-group--input-group--input{
+        height: 40px;
+    }
+
+    .header__nav--botonesLateral--modal-body--form--form-group--input-group--input::placeholder{
+        font-size: 14px;
+    }
+
+    .header__nav--botonesLateral--modal-body--form--form-group--button{
+        height: 45px;
+        margin-left: 25px;
+        font-size: 14px;
+    }
+
+    .header__nav--botonesLateral--modal-footer{
+        margin-left: 40px;
+    }
+
+    .header__nav--botonesLateral--modal-footer--a{
+        font-size: 12px;
+    }
+
+    /*----------------------------RESPONSIVE CELULAR----------------------------*/
+    /*--------------------------------MAIN------------------------------------*/
+
+    .seccionCarrusel .carousel-inner img{
+        height: 200px;
+    }
+    .header__nav--botonesLateral--modal-body{
+        background: #4389A2;
+    }
+
+    .grid-masVendido, .grid-Lanzamiento, .grid-algunasOfertas, .seccionExtra{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        align-items: baseline;
+        margin: 20px;
+        justify-content: stretch;
+    }
+
+    .grid-masVendido div,.grid-Lanzamiento div, .grid-algunasOfertas div{
+        background-color: white;
+        border-radius: 0.5em;
+        align-self: stretch;
+    }
+
+    .grid-masVendido h3,.grid-Lanzamiento h3, .grid-algunasOfertas h3, .seccionExtra h3{
+        font-size: 9.5px;
+    }
+
+    .grid-masVendido img, .grid-Lanzamiento img, .grid-algunasOfertas img{
+        width: 80%;
+        height: 70%;
+    }
+
+    .lanzItem2 img{
+        width: 100%;
+    }
+
+    .seccionMasVendido h2::after, .seccionMasVendido h2::before, .seccionLanzamiento h2::after, .seccionLanzamiento h2::before, .seccionAlg-ofertas h2::after, .seccionAlg-ofertas h2::before, .seccionNovedadesTitulo::after, .seccionNovedadesTitulo::before,.seccionTitulo::after, .seccionTitulo::before, .seccionTituloCel::after, .seccionTituloCel::before{
+        width: 80px;
+        top: 2rem;
+    }
+
+    .seccionMasVendido h2::after, .seccionLanzamiento h2::after, .seccionAlg-ofertas h2::after, .seccionNovedadesTitulo::after,.seccionTitulo::after, .seccionTitulo::after, .seccionTituloCel::after{
+        left: -80px;
+    }
+
+    .seccionMasVendido h2::before, .seccionLanzamiento h2::before, .seccionAlg-ofertas h2::before, .seccionNovedadesTitulo::before,.seccionTitulo::before, .seccionTitulo::before, .seccionTituloCel::before{
+        right: -80px;
+    }
+
+    .nuevoLanzamiento, .nuevoLanzamiento1, .nuevoLanzamiento2{
+        top: 5px;
+        left: 5px;
+        z-index: 1;
+        height: 4%;
+        width: 22%;
+        font-size: 7px;
+    }
+
+    .colorPrecio{
+        font-size: 11px;
+    }
+
+    .precioAnterior{
+        font-size: 10px;
+    }
+
+    /*Novedades -- Responsive Celular*/
+    
+    .seccionNovedades{
+        background-color: #262626;
+    }
+
+    .seccionNovedades p{
+        font-size: 11px;
+    }
+
+    .seccionNovedades h2{
+        font-size: 16px;
+    }
+
+    .novedadesSamsung iframe, .novedadesIphone iframe, .novedadesSamsungTablet iframe{
+        margin: 0px;
+        width: 90%;
+        height: 250px;
+        float: none;
+    }
+
+    .novedadesSamsung-texto h2, .novedadesIphone-texto h2, .novedadesSamsungTablet-texto h2{
+        margin-top: 5px;
+    }
+
+    /*Hidrogel -- Responsive Celular*/
+
+    .seccionHydrogel{
+        height: 60%;
+        margin: 0;
+    }
+
+    .hidrogelImagen{
+        width: 80%;
+        float: none;
+    }
+
+    .hidrogelCaracteristicasImagen img{
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+    }
+
+    .hidrogelCaracteristicasParrafo h2{
+        font-size: 28px;
+    }
+
+    .hidrogelCaracteristicasParrafo p{
+        color: #ffffff;
+        font-size: 11px;
+        text-align: start;
+        border-top: 0.2rem solid #642c94;
+        padding: 0.5rem;
+        margin: 20px;
+    }
+
+    .hidrogelCaracteristicasImagen{
+        justify-content: space-between;
+    }
+
+    .hidrogelCaracteristicasImagen p{
+        font-size: 11px;
+    }
+
+    .seccionHydrogel button{
+        width: 30%;
+        height: 30px;
+        margin-left: 10%;
+        border-radius: 2px;
+    }
+
+    .seccionHydrogel button a{
+        font-size: 11px;
+    }
+
+
+    /*Contactanos -- Responsive Celular*/
+
+    .seccionContactanos{
+        margin: 0;
+    }
+
+    .seccionContactanos img{
+        width: 100%;
+        height: 400px;
+    }
+
+    .seccionContactanos-texto h2{
+        font-size: 28px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .seccionContactanos-texto p{
+        font-size: 14px;
+        padding-left: 45px;
+        margin-right: 100px;
+    }
+
+    .seccionContactanos-texto button{
+        margin-right: 20%;
+    }
+
+    .seccionContactanos-texto button{
+        width: 45%;
+        height: 60px;
+        margin-right: 30%;
+    }
+
+    .seccionContactanos-texto button a{
+        font-size: 15px;
+    }
+
+    /*Chat -- Responsive Celular*/
+
+    .seccionChat{
+        bottom: 15px;
+        right: -30px;
+    }
+    
+    .seccionChat img{
+        width: 45%;
+    }
+
+    .dropdown-item img{
+        width: 90%;
+    }
+
+    .btn-group ul ul{
+        padding-left: 100px;
+    }
+
+    .seccionArriba{
+        bottom: 30px;
+        left: -5px;
+    }
+
+    .seccionArriba a img{
+        width: 50%;
+    }
+
+    /*Extra -- Responsive Celular*/
+
+    .seccionExtra{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        padding: 1rem;
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+        
+    }
+
+    .seccionExtra img{ 
+        width: 13%;
+    }
+
+    .seccionExtra h4 {
+        font-size: 0.8rem;
+    }
+
+
+
+    /*----------------------------RESPONSIVE CELULAR----------------------------*/
+    /*--------------------------------PRODUCTOS------------------------------------*/
+
+
+
+    .seccionProductos{
+        padding-left: 8%;
+        margin: 20px;
+    }
+
+    .seccionProductos img{
+        width: 60%;
+        height: 48%;
+    }
+
+    .seccionProductos a{
+        padding: 5px;
+    }
+
+    .productosMarcas img{
+        width: 50%;
+        margin: 6px;
+    }
+
+    .productosMarcas {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .grid-Celulares, .grid-Tablet, .grid-Relojes, .grid-Ofertas{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-self: start;
+    }
+
+    .grid-Celulares img{
+        width: 60%;
+        height: 50%;
+    }
+
+    .celItem6 img{
+        width: 102%;
+    }
+    
+    .grid-Tablet img{
+        width: 75%;
+        height: 50%;
+    }
+
+    .tabletItem2 img{
+        width: 107%;
+    }
+
+    .tabletItem5 img{
+        width: 85%;
+    }
+
+    .grid-Relojes img{
+        width: 60%;
+        height: 50%;
+    }
+
+    .relItem1 img{
+        width: 70%;
+    }
+
+    .grid-Celulares div,.grid-Tablet div, .grid-Relojes div{
+        background-color: white;
+        border-radius: 0.5em;
+        align-self: flex-end;
+    }
+
+    .grid-Celulares h3,.grid-Tablet h3, .grid-Relojes h3{
+        font-size: 9px;
+    }
+
+    .seccionTituloCel{
+        font-size: 20px ;
+    }
+
+    .seccionTituloCel::after, .seccionTituloCel::before{
+        top: 0.8rem;
+        width: 70px;
+    }
+
+    .seccionTitulo::after, .seccionTitulo::after, .seccionTituloCel::after{
+        left: -80px;
+    }
+
+    .seccionTitulo::after, .seccionTitulo::after, .seccionTituloCel::after{
+        right: -80px;
+    }
+
+    /*----------------------------RESPONSIVE CELULAR----------------------------*/
+    /*--------------------------------OFERTAS------------------------------------*/
+
+    .grid-Ofertas h3{
+        font-size: 9px;
+    }
+
+    .grid-Ofertas div{
+        border-radius: 0.5em;
+    }
+
+    .grid-Ofertas img{
+        width: 60%;
+        height: 50%;
+    }
+
+    .oferItem1 img, .oferItem5 img, .oferItem8 img{
+        width: 85%;
+    }
+
+    .oferItem4 img{
+        width: 72%;
+    }
+
+
+    /*----------------------------RESPONSIVE CELULAR----------------------------*/
+    /*--------------------------------CONTACTO------------------------------------*/
+
+    .fondoContacto img{
+        width: 100%;
+        height: 200px;
+    }
+
+    .fondoContacto div{
+        left: 52%;
+    }
+
+    .fondoContacto h1{
+        letter-spacing: 0.2rem;
+    }
+
+    .contactoIframe{
+        width: 90%;
+    }
+
+    .contacto-redesSociales img{
+        padding: 28px;
+    }
+
+    .formButton button{
+        padding: 0;
+        margin-top: 20px;
+        width: 100px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        padding: 0;
+    }
+
+    .container input, .container select{
+        width: 100%;
+        height: 80%;
+    }
+
+    .formConsulta{
+        width: 100%;
+    }
+
+    input::placeholder, textarea::placeholder, .form-select{
+        font-size: 14px;
+    }
+
+    .contacto-redesSociales img{
+        width: 90%;
+    }
+
+    .contacto-Mensajeria{
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 20px;
+        text-align: center;
+        background-color: #f1f1f1;
+        padding: 2rem;
+    }
+
+    .contacto-MensajeriaColor-Mensaje img{
+        width: 20%;
+    }
+
+    .contacto-MensajeriaColor-Llamanos{
+        border-top: 5px solid #5c268c;
+        border-bottom: 5px solid #5c268c;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .contacto-Mensajeria p, .contacto-MensajeriaColor{
+        font-size: 14px;
+        font-weight: 410;
+        padding-top: 5px;
+    }
+    
+
+    /*----------------------------RESPONSIVE CELULAR----------------------------*/
+    /*--------------------------------QUIENES SOMOS------------------------------------*/
+
+
+    .fondoQuienes-somos img{
+        width: 100%;
+        height: 200px;
+    }
+
+    .fondoQuienes-somos div{
+        left: 60%;
+    }
+
+    .fondoQuienes-somos h1{
+        letter-spacing: 0.2rem;
+    }
+
+    .imgQuienessomos-lateral{
+        width: 40%;
+        height: 40%;
+    }
+
+    .seccionQuienessomos h2{
+        margin: 20px;
+    }
+
+    .textoQuienessomos {
+        padding: 10px;
+    }
+
+    .parrafoQuienessomos, .textoQuienessomos{
+        font-size: 14px;
+    }
+
+    /*----------------------------RESPONSIVE CELULAR----------------------------*/
+    /*--------------------------------FOOTER------------------------------------*/
+
+    footer{
+        padding: 1rem;
+    }
+
+    .footer__piepagina h2{
+        text-align: start;
+        padding-left: 50px;
+        font-size: 20px;
+    }
+
+    .footer__piepagina{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-self: flex-start;
+        padding: 0px;
+    }
+
+    .footer__piepagina--ftrSuscribete--form{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .footer__piepagina--ftrInformacion--ul{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    
+    .footer__piepagina--ftrSecciones--ul{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    
+    .footer__piepagina--ftrSuscribete--form--p, .footer__piepagina--ftrSuscribete--form--input::placeholder{
+        font-size: 12px;
+    }
+
+    .footer__piepagina--ftrSuscribete--form--button, .footer__piepagina--ftrInformacion--ul--li--a, .footer__piepagina--ftrSecciones--ul--li--a{
+        font-size: 14px;
+    }
+
+    .footer__piepagina--ftrLogo--p{
+        font-size: 10px;
+    }
+
+    .footer__piepagina--ftrLogo--redes_sociales{
+        margin-top: 20px;
+    }
+
+    .footer__piepagina--ftrLogo--redes_sociales--a--img{
+        width: 10%;
+    }
+
+    .footer__piepagina--ftrLogo--p{
+        padding: 0;
+    }
+
+    .footer__piepagina--ftrLogo--img{
+        padding-left: 20%;
+    }
+
+    .footer__piepagina--ftrLogo--redes_sociales{
+        padding-left: 30%;
+    }
+
+}
