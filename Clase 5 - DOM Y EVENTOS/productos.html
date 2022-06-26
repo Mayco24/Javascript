@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icono-->
+    <link rel="shortcut icon" href="Imagenes/Logo.ico" />
+    <!--Descripcion-->
+    <meta name="descripcion"
+        content="Tienda de Celulares NFC Celulares. Encuentra los mejores celulares, tablet y relojes los ultimos modelos y los mejores precios para vos.">
+    <!--Keywords-->
+    <meta name="keywords" content="Nfc Celulares, Celulares, Tablet, Relojes, Smartphones,
+         Smartwatch, Tienda de Celulares, Samsung, Motorola, LG, Amazon, Xiaomi, Apple">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <!--link al CDM de animate-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>NFC CELULARES</title>
+</head>
+
+<body>
+    <a name="arriba"></a>
+    <div class="contenedor">
+        <header class="contHeader">
+            <nav class="navbar navbar-expand-lg header__nav">
+                <div class="container-fluid">
+                    <div class="header__nav--logo_Inicio animate__animated animate__zoomIn">
+                        <a class="header__nav--logo_Inicio--a" href="productos.html"><img class="header__nav--logo_Inicio--a--img" src="Imagenes/Logo de inicio.png"
+                                alt="Imagen Logo de la Pagina "></a>
+                    </div>
+                    <div>
+                        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="nav-menu-one navbar-collapse header__nav--menu" id="navbarNavDropdown">
+                        <ul class="navbar-nav header__nav--menu--ul">
+                            <li class="nav-item header__nav--menu--ul--li">
+                                <a class="nav-link header__nav--menu--ul--li--a" href="productos.html">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item header__nav--menu--ul--li">
+                                <a class="nav-link header__nav--menu--ul--li--a" href="productos.html">OFERTAS</a>
+                            </li>
+                            <li class="nav-item header__nav--menu--ul--li">
+                                <a class="nav-link header__nav--menu--ul--li--a" href="productos.html">CONTACTO</a>
+                            </li>
+                            <li class="nav-item header__nav--menu--ul--li">
+                                <a class="nav-link header__nav--menu--ul--li--a" href="productos.html">QUIENES SOMOS</a>
+                            </li>
+                        </ul>
+                        <!--Buscador-->
+                        <div class="header__nav--botonesInicio">
+                            <form action="" class="header__nav--botonesInicio--form">
+                                <input class="header__nav--botonesInicio--form--input" type="search" name="Buscador" placeholder="¿Que buscas?">
+                                <button class="header__nav--botonesInicio--form--button"><img src="./Imagenes/ico/search.png" alt="Icono Boton buscador"></button>
+                            </form>
+                        </div>
+                        <div class="header__nav--botonesLateral">
+                            <button type="button" class="btn btn-link position-relative header__nav--botonesLateral--button"><img
+                                    src="./Imagenes/ico/carrito-de-compras.png" alt="Icono Carrito de Compra"> <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-link">
+                                    <span class="visually-hidden">unread messages</span></span>
+                            </button>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-link header__nav--botonesLateral--button" data-bs-toggle="modal"
+                                data-bs-target="#myModal"><img src="./Imagenes/ico/cuenta_de_usuario.png"
+                                    alt="Icono Carrito de Compra">
+                            </button>
+                            <!-- Modal -->
+                            <div id="myModal" class="modal fade header__nav--botonesLateral--modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog header__nav--botonesLateral--modal-dialog">
+                                    <div class="modal-content header__nav--botonesLateral--modal-content">
+                                        <div class="modal-header header__nav--botonesLateral--modal-header">
+                                            <h3 class="modal-title">Iniciar Sesión</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body header__nav--botonesLateral--modal-body">
+                                            <a class="header__nav--botonesLateral--modal-body--a" href="index.html"><img class="header__nav--botonesLateral--modal-body--a--img" src="Imagenes/Logo de inicio.png"
+                                                    alt="Imagen logo inicio"></a>
+                                            <form action="" class="header__nav--botonesLateral--modal-body--form">
+                                                <div class="form-group header__nav--botonesLateral--modal-body--form--form-group">
+                                                    <div class="input-group header__nav--botonesLateral--modal-body--form--form-group--input-group">
+                                                        <span class="input-group-addon"></i></span>
+                                                        <input type="text" class="form-control header__nav--botonesLateral--modal-body--form--form-group--input-group--input" name="Usuario"
+                                                            placeholder="Usuario" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group header__nav--botonesLateral--modal-body--form--form-group">
+                                                    <div class="input-group header__nav--botonesLateral--modal-body--form--form-group--input-group">
+                                                        <span class="input-group-addon"></span>
+                                                        <input type="text" class="form-control header__nav--botonesLateral--modal-body--form--form-group--input-group--input" name="Contraseña"
+                                                            placeholder="Contraseña" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group header__nav--botonesLateral--modal-body--form--form-group">
+                                                    <button class="header__nav--botonesLateral--modal-body--form--form-group--button" type="submit"
+                                                        class="btn btn-secondary btn-block btn-lg">Iniciar
+                                                        Sesión</button>
+                                                </div>
+                                                <p class="hint-text header__nav--botonesLateral--modal-body--form--p"><a href="#" class="header__nav--botonesLateral--modal-body--form--p--a">¿Olvidaste tu contraseña?</a></p>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer header__nav--botonesLateral--modal-footer">
+                                            <h4 class="header__nav--botonesLateral--modal-footer--h4">¿No tienes una cuenta?</h4><a class="header__nav--botonesLateral--modal-footer--a" href="#">Creé una Aquí</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="contenedor-de-productos"></div>
+
+        </main>
+
+        <!--Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"></script>
+
+        <script src="productos.js">
+        </script>
+
+</body>
+
+</html>
