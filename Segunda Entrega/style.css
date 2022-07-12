@@ -135,6 +135,11 @@ header{
     box-shadow: none;
 }
 
+.header__nav--botonesLateral--button img{
+    width: 25px;
+    height: 25px;
+}
+
 .header__nav--botonesLateral--modal-body--form--form-group--input-group--input{
     padding: 10px;
     margin: 10px;
@@ -252,3 +257,8 @@ header{
     background-color: #5C258D;
   }
   
+
+
+#listadoProductos{
+    list-style: none;
+}

@@ -150,8 +150,10 @@
                 <label for="user">Ingrese nombre de usuario</label>
                 <input id="user" type="text" placeholder="Nombre">
                 <input type="submit" value="Buscar">
-                
             </form>
+            <div id="bienvenido-usuario">
+
+            </div>
         </div>
 
         <!--Mostrar Productos de la tienda-->
@@ -167,16 +169,17 @@
             </div>
             <div class="offcanvas-body">
                 <div>
-                    <ul id="listadoCarrito">
-                        <li id="listadoProductos">
-                        </li>
-                        <p>Precio Total:<span id="precioTotal">0</span></p> 
-                    </ul>
+                    <div id="listadoCarrito">  
+                    </div>
+                    <h4>Precio total: $<span id="precioTotal">0</span></h4>
                 </div>
             </div>
         </div>
         <!----------->
     </main>
+
+
+
 
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"

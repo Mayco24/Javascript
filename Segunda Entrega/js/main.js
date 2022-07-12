@@ -1,11 +1,33 @@
 
 busqueda(productos); // BUSCAR PRODUCTOS
 mostrarProductos(productos);
-const carritoCompra = [];
+let carritoCompra = [];
 let nombreUsuario;
 
+
+const listadoCarrito = document.getElementById(`listadoCarrito`);
 const contadorCarrito = document.getElementById('contadorCarrito');
 const precioTotal = document.getElementById('precioTotal');
+
+document.getElementById("formulario-usuario").addEventListener("submit", manejadorFormularioUsuario);
+
+
+function manejadorFormularioUsuario(e){
+    e.preventDefault();
+    nombreUsuario = document.getElementById("user").value;
+    let bienvenidoUsuario = document.getElementById('bienvenido-usuario')
+    bienvenidoUsuario.innerHTML = `Bienvenido ${nombreUsuario}`
+
+    let listadoDeCarrito = document.getElementById("listadoCarrito");
+    const carrito = JSON.parse(localStorage.getItem(nombreUsuario));
+
+    if (carrito == null) {
+        listadoDeCarrito.innerHTML = "<h4>El carrito esta vacio</h4>"
+    } 
+    else {
+      mostrarCarrito(prodCarrito);
+    }
+}
 
 //Buscador
 function busqueda(productos){
@@ -36,23 +58,6 @@ function busqueda(productos){
 }
 
 
-document.getElementById("formulario-usuario").addEventListener("submit", manejadorFormularioUsuario);
-
-function manejadorFormularioUsuario(e){
-    e.preventDefault();
-    nombreUsuario = document.getElementById("user").value;
-
-    let listadoDeCarrito = document.getElementById("listadoCarrito");
-    const carrito = JSON.parse(localStorage.getItem(nombreUsuario));
-
-    if (carrito == null) {
-        listadoDeCarrito.innerHTML = "<h4>El carrito esta vacio</h4>"
-    } 
-    else {
-      mostrarCarrito(prodCarrito);
-    }
-}
-
 function mostrarProductos(productos){
     const contenedorTienda = document.getElementById('contenedorTienda');
 
@@ -80,7 +85,7 @@ function mostrarProductos(productos){
     botonComprar.id = `${producto.id}`;
 
     botonComprar.addEventListener(`click`, () => {
-      agregarAlCarrito(botonComprar.id);
+      agregarCarrito(botonComprar.id);
     })
 
     divProducto.append(imgProducto, nombreProducto, precioProducto, botonComprar);
@@ -92,63 +97,56 @@ function mostrarProductos(productos){
 }
 
 function mostrarCarrito(prodCarrito) {
-  let listadoCarrito = document.getElementById("listadoCarrito");
-  let listadoProductos = document.getElementById("listadoProductos");
+  let div = document.createElement(`div`);
+  div.setAttribute(`class`,`mostrar-carrito`);
+  div.innerHTML = `<div>
+                        <div class="container">
+                          <h4>Carrito de compras</h4>
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Precio</th>
+                              </tr>
+                            </thead>
+                            <tbody id="items">
+                              <th scope="col">#</th>
+                              <th scope="col">${prodCarrito.nombre}</th>
+                              <th scope="col">${prodCarrito.cantidad}</th>
+                              <th scope="col">${prodCarrito.precio}</th>
+                              <th><button id="eliminar${prodCarrito.id}">borrar</button></th>
+                            </tbody>
+                          </table>
+                        </div>
+                    </div>`
 
-  listadoCarrito.innerHTML =
-    `<h3>Bienvenido ${nombreUsuario}</h3>
-    <div class="container">
-       <div class="row align-items-start">
-         <div class="col">
-           Producto
-         </div>
-       <div class="col">
-           Cantidad
-       </div>
-       <div class="col">
-           Precio
-       </div>
-    </div>`;
-  
-  listadoProductos.innerHTML =
-  `<div class="container">
-     <div class="row align-items-start">
-       <div class="col">
-         ${prodCarrito.nombre}
-       </div>
-     <div class="col">
-         ${prodCarrito.cantidad}
-     </div>
-     <div class="col">
-        ${prodCarrito.precio}
-     </div>
-  </div>
-  <button id="eliminar">Borrar</button>`;
+  listadoCarrito.appendChild(div);
 
-  let btnEliminar = document.getElementById("eliminar");
+  let btnEliminar = document.getElementById(`eliminar${prodCarrito.id}`);
 
   btnEliminar.addEventListener(`click`, () => {
-    eliminarProducto(carritoCompras)
+    eliminarProducto(carritoCompra)
     actualizarCarrito()
-
 })
 }
 
 function agregarCarrito(id) {
-    let prodCarrito = productos.find(item => item.id === id)
+    let prodCarrito = productos.find(item => item.id == id)
     console.log(prodCarrito)
-    carritoCompras.push(prodCarrito)
+    carritoCompra.push(prodCarrito)
     mostrarCarrito(prodCarrito)
     actualizarCarrito()
 
     const productosEnLocalStorage = JSON.parse(localStorage.getItem(nombreUsuario));
 
     if (productosEnLocalStorage == null) {
-        localStorage.setItem(nombreUsuario, JSON.stringify([carritoCompras]));
-        mostrarCarrito([carritoCompras]);
+        localStorage.setItem(nombreUsuario, JSON.stringify([carritoCompra]));
+        mostrarCarrito([carritoCompra]);
       } 
     else {
-        productosEnLocalStorage.push(carritoCompras);
+        productosEnLocalStorage.push(carritoCompra);
         localStorage.setItem(nombreUsuario, JSON.stringify(productosEnLocalStorage));
         mostrarCarrito(productosEnLocalStorage);
       }
@@ -156,8 +154,8 @@ function agregarCarrito(id) {
 }
 
 
-function eliminarProducto(carritoCompras) {
-    console.log(carritoCompras);
+function eliminarProducto(carritoCompra) {
+    console.log(carritoCompra);
     const productosEnLocalStorage = JSON.parse(localStorage.getItem(nombreUsuario));
     const nuevoArray = productosEnLocalStorage.filter(item => item.id != prodCarrito.id);
     localStorage.setItem(nombreUsuario, JSON.stringify(nuevoArray));
@@ -165,6 +163,6 @@ function eliminarProducto(carritoCompras) {
 }
 
 function actualizarCarrito() {
-    contadorCarrito.innerText = carritoCompras.length
-    precioTotal.innerText = carritoCompras.reduce((acc, el) => acc + el.precio, 0);
+    contadorCarrito.innerText = carritoCompra.length
+    precioTotal.innerText = carritoCompra.reduce((acc, el) => acc + el.precio, 0);
 }
