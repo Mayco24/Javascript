@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0e0e0;
+}
+
+h1{
+    font-weight: 600;
+    color: #707070;
+    font-size: 30px;
+    margin: 20px;
+}
+
+h2{
+    font-size: 26px;
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+    font-weight: 500;
+    color: #707070;
+}
+
+h3{
+    font-size: 20px;
+}
+
+h4{
+    font-size: 16px;
+    text-align: center;
+}
+
+p{
+    font-size: 15px;
+}
+
+header{
+    width: 100%;
+    background: #5C258D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header__nav--logo_Inicio{
+    padding-left: 20px;
+}
+
+.header__nav{
+    padding: 0;
+}
+
+.header__nav--menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.header__nav--menu--ul--li{
+    display: inline-block;
+    font-size: 17px;
+}
+
+.header__nav--menu--ul--li--a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 18px;
+}
+
+.header__nav--menu--ul--li--a:hover{
+    border-bottom: 3px solid white;
+    color: #d3d3d3;
+}
+
+.header__nav--botonesInicio{
+    padding: 5px;
+}
+
+.header__nav--botonesInicio--form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5c268c;
+}
+
+.header__nav--botonesInicio--form:hover{
+    border: 1.5px solid white;
+    padding: 0;
+    margin: 0;
+}
+
+.header__nav--botonesInicio--form--button{
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+}
+
+.header__nav--botonesInicio--form--input{
+    height: 5.5vh;
+    width: 32vh;
+    transition: .3s linear;
+    background-color: #5c268c;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    float: left;
+}
+
+.header__nav--botonesInicio--form--input:hover{
+    outline: none;
+    width: 40vh;
+}
+
+.header__nav--botonesInicio--form--input:focus{
+    outline: none;
+}
+
+.header__nav--botonesInicio--form--input::placeholder{
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+.header__nav--botonesLateral--button{
+    padding: 15px;
+}
+
+.header__nav--botonesLateral--button:focus{
+    box-shadow: none;
+}
+
+.header__nav--botonesLateral--button img{
+    width: 25px;
+    height: 25px;
+}
+
+.header__nav--botonesLateral--modal-body--form--form-group--input-group--input{
+    padding: 10px;
+    margin: 10px;
+    width: 10px;
+}
+
+.header__nav--botonesLateral--modal-body--form--form-group--button{
+    width: 300px;
+    height: 60px;
+    margin-top: 8px;
+    margin-left: 80px;
+    background-color: #5c268c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.header__nav--botonesLateral--modal-body--form--form-group--button:hover{
+    background-color: #4524A3;
+}
+
+.header__nav--botonesLateral--modal-body--form--p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header__nav--botonesLateral--modal-body--form--p--a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.header__nav--botonesLateral--modal-body--form--p--a:hover{
+    color: #3F57B0;
+}
+
+.header__nav--botonesLateral--modal-body{
+    background-color: #4389a2;
+}
+
+.header__nav--botonesLateral--modal-body--a--img{
+    text-align: center;
+    padding-left: 140px;
+    width: 300px;
+    margin:10px;
+}
+
+.header__nav--botonesLateral--modal-footer{
+    padding-right: 110px;
+}
+
+.header__nav--botonesLateral--modal-footer--a{
+    color: #4389a2;
+    text-decoration: none;
+}
+
+.header__nav--botonesLateral--modal-footer--a:hover{
+    color: #3F57B0;
+}
+
+body{
+    text-align: center;
+}
+
+.form{
+    margin: 20px;
+    padding: 10px;
+}
+
+
+.form-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-row div{
+    padding-left: 5px;
+}
+
+.btn-success{
+    background-color: #5C258D;
+    border: none;
+}
+
+.btn-success:focus{
+    background-color: #5C258D;
+    box-shadow: none;
+}
+
+.btn-success:hover{
+    background-color: #5C258D;
+    box-shadow: none;
+}
+
+.btn-success::placeholder{
+    background-color: #5C258D;
+    box-shadow: none;
+}
